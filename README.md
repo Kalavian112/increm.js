@@ -5,7 +5,7 @@ Does not support infinity or negative numbers, only operations are add, subtract
 
 All functions are inside increm object. Increm numbers are represented by an array: [mantissa, exponent] to use outside the library (converting to strings), additionally all calculations have 12 decimal digits of accuracy.
 
-- from: converts float into increm, with optional exponent. increm.from(1.273, 500) returns 1.273e500.
+- from: converts float into increm, with optional exponent. increm.from(1.273, 500) returns 1.273e500. This function should be used with a normalized mantissa and exponent as normalization takes a while otherwise, however it is fast enough to use once during initialization.
 - addSub: adds or subtracts two increm based on third parameter (subtract=true)
 - multFloat: multiplies increm by float
 - toFloat: converts increm to float if within 1.76e308

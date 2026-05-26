@@ -3,7 +3,7 @@ Tiny Javascript bignum library for incremental games, supporting numbers up to 9
 
 Does not support infinity or negative numbers, only operations are add, subtract, multiply float, and comparison, just made for an incremental game.
 
-All functions are inside increm object. Increm numbers are represented by an array: [mantissa, exponent]
+All functions are inside increm object. Increm numbers are represented by an array: [mantissa, exponent] to use outside the library (converting to strings), additionally all calculations have 12 decimal digits of accuracy.
 
 - from: converts float into increm, with optional exponent. increm.from(1.273, 500) returns 1.273e500.
 - addSub: adds or subtracts two increm based on third parameter (subtract=true)
